@@ -1,54 +1,49 @@
-* {
-    font-family: sans-serif;
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-  }
-  table, th, td {
-    border: 1px solid gray;
-    padding: 2px;
+:root{
+  --height-footer: 30px;
+  --height-header: 50px;
 }
-  body {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    height: 100vh;
-  }
+body{
+  background-color: rgb(19, 23, 39);
+}
+*{
+  font-family: sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
   
-  header {
-    background: #394674;
-    color: #fff;
-    width: 100%;
-    padding: 0.5rem;
-  
-    display: flex;
-    justify-content: center;
-  }
-  
-  a{
-    text-decoration: none;
-    color: #fff;
-  }
-  nav {
-    width: 100%;
-    padding: 0.5rem;
-    display: flex;
-    justify-content: center;
-    gap: 1rem;
-  }
-  
-  form {
-    max-width: 1000px;
-    display: flex;
-    flex-direction: column;
-    padding: 2rem;
-  }
-  
-  footer {
-    background: #394674;
-    color: #fff;
-    width: 100%;
-    padding: 0.5rem;
-    display: flex;
-    justify-content: center;
-  }
+header{
+  height: var(--height-header);
+  background: #394674;
+  color: #fff;
+  width: 100%;
+  font-size: 1rem;
+  padding: 0.5rem;
+  display: flex;
+  justify-content: center;
+}
+
+/* LOGIN */
+.sec-login{
+  height: calc(100vh - var(--height-footer) - var(--height-header) );
+}
+
+nav {
+  width: 100%;
+  padding: 0.5rem;
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+}
+footer {
+  height: var(--height-footer);
+  background: #394674;
+  color: #fff;
+  width: 100%;
+  padding: 0.5rem;
+  position: fixed;
+  bottom: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
