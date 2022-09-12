@@ -10,49 +10,50 @@
 <body>
     
     <header>
-        <div>
-            <h3>SIGAA</h3>
+        <div class="nav-logo">
+            <h3>NOVO SIGAA</h3>
         </div>
-        <nav>
-            <a href="#">Painel de controle</a>
+        <nav class="nav-links">
+            <a href="#" class="active">Painel de controle</a>
             <a href="historico.html">Histórico</a>
             <a href="cadastro.html">Cadastro de Componentes</a>
             <a href="index.html">Sair</a>
         </nav>
     </header>
-    <br>
-    <div>
-        <h1>Painel De Controle</h1>
-        <hr>
-    </div>
-    
-    <main>
-       
+    <main class="painel-controle-main">
 
-        <br><br><br>
 
-        <section>
-            <article>
-                <h2>Perfil do Usuário</h2>
-                <hr><br>
+        <aside>
+            <div class="aside-card-perfil">   
 
                 <figure>
-                    <img src="perfil.jpg" width="150px" alt="">
+                    <img src="perfil.jpg" alt="">
                 </figure>
-                <p>
-                    <b>- nome:</b> Tailson vasconcelos Alves <br>
-                    <b>- email:</b> Tailsonv09@alu.ufc.br <br>
-                    <b>- IRA: </b> 8.2 <br>
-                    <b>- cr cursadas:</b> 430cr <br>
 
-                    <label for="tema"><b>Cor de tema -></b></label>
-                    <input type="color" name="tema" >
-                </p>
-            </article>
-            <br><hr>
-        </section>
-        
-        <br><br><br>
+                <div class="card-head">
+                    <h2>Perfil do Usuário</h2>
+                </div>
+
+                <div class="card-body">
+                    <div class="card-content-info">
+                        <label >Nome</label>
+                        <input disabled type="text" value="Tailson Vasconcelos Alves">
+                    </div>
+                    <div class="card-content-info">
+                        <label >Email</label>
+                        <input disabled type="text" value="Tailsonv09@gmail.com">
+                    </div>
+                    <div class="card-content-info">
+                        <label >Ira</label>
+                        <input disabled type="text" value="8.2">
+                    </div>
+                    <div class="card-content-info">
+                        <label >CR Cursadas</label>
+                        <input disabled type="text" value="430cr">
+                    </div>
+                </div>
+            </div>
+        </aside>
         
         <section>
             <article>
@@ -67,9 +68,7 @@
                     </ul>
                 </div>
             </article>
-        </section>
 
-        <section>
             <article>
                 <h2>Relação de Créditos</h2>
                 <hr><br>
