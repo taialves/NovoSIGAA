@@ -3,6 +3,7 @@
   --height-header: 50px;
   --txt-color-white: #C9D1D9;
   --outline: #2A2E35;
+  --main-color: #394674;
 }
 body{
   background-color: #0D1117;
@@ -63,10 +64,12 @@ header{
   padding: 0.5em;
   width: 30vw;
 }
-.painel-controle-main section{
+.painel-controle-main section.right{
   border-left: 2px solid #2A2E35;
-  padding: 2em;
+  padding: 0 0 1em 0;
   width: 70vw;
+  display: flex;
+  gap: 10px;
 }
 .active{
   background: #394674;
@@ -138,6 +141,77 @@ header{
   color: #fff;
 }
 
+.painel-controle-main section.right .right-col-1{
+  width: 1000px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 0.5em;
+  overflow-x: hidden;
+}
+.painel-controle-main section.right .right-col-2{
+  border: 1px solid red;
+}
+.painel-controle-main section.right .right-col-1 .card-article{
+  border: 1px solid #fff;
+  margin-bottom: 15px;
+  margin-top: 10px;
+  width: 620px;
+  background: #282a36;
+  border-radius: 0 10px 10px 10px;
+  padding: 10px;
+  position: relative;
+}
+.painel-controle-main .card-article .card-article-lbl{
+  position: absolute;
+  border: 1px solid #fff;
+  font-size: 1em;
+  padding: 0.1em 0.5em;
+  top: -16px;
+  color: #fff;
+  background: var(--main-color);
+  left: -1px;
+}
+
+table.table-disciplinas-atuais{
+  display: flex;
+  flex-direction: column;
+  color: rgb(85, 182, 211);
+  font-size: 12px;
+}
+
+table.table-disciplinas-atuais thead tr{
+  display: flex;
+  justify-content: space-around;
+  border-bottom: 1px solid #8c8dca;
+}
+table.table-disciplinas-atuais tbody tr{
+  border-bottom: 1px solid #394674;
+  display: inline-block;
+  margin: 2px 0;
+}
+table.table-disciplinas-atuais tbody tr td:nth-child(1){
+  display: inline-block;
+  width: 250px;
+}
+table.table-disciplinas-atuais tbody tr td:nth-child(2){
+  display: inline-block;
+  width: 20px;
+  margin-left: 25px;
+}
+table.table-disciplinas-atuais tbody tr td:nth-child(3){
+  display: inline-block;
+  width: 100px;
+  line-break: auto;
+  margin-left: 50px;
+}
+table.table-disciplinas-atuais tbody tr td:nth-child(4){
+  display: inline-block;
+  width: 110px;
+  margin-left: 30px;
+  line-break: auto;
+}
 
 /* LOGIN */
 .sec-login{
