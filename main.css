@@ -143,26 +143,32 @@ header{
 
 .painel-controle-main section.right .right-col-1{
   width: 1000px;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
+  z-index: 100;
+  border: 1px solid #fff;
   padding: 0.5em;
   overflow-x: hidden;
+  overflow-y: scroll;
 }
 .painel-controle-main section.right .right-col-2{
   border: 1px solid red;
 }
 .painel-controle-main section.right .right-col-1 .card-article{
   border: 1px solid #fff;
-  margin-bottom: 15px;
-  margin-top: 10px;
+  margin: 20px 0 25px 0;
+  display: block;
   width: 620px;
   background: #282a36;
   border-radius: 0 10px 10px 10px;
   padding: 10px;
   position: relative;
 }
+.painel-controle-main .card-article:nth-child(1) .card-article-lbl{
+  background: #be4242;
+}
+.painel-controle-main .card-article:nth-child(3) .card-article-lbl{
+  background: #105f2b;
+}
+
 .painel-controle-main .card-article .card-article-lbl{
   position: absolute;
   border: 1px solid #fff;
@@ -177,7 +183,7 @@ header{
 table.table-disciplinas-atuais{
   display: flex;
   flex-direction: column;
-  color: rgb(85, 182, 211);
+  color: var(--txt-color-white);
   font-size: 12px;
 }
 
